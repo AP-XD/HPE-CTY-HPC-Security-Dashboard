@@ -82,6 +82,13 @@ microk8s helm install trivy-operator aqua/trivy-operator \
   --values trivy-values.yaml
 ```
 
+## **Create Deployment and Service for generating report from Kube-bench**
+
+```sh
+k delete job kube-bench
+k apply -f job-cis.yaml
+```
+
 ## **Saving the reports to a json file which will be served as metrics**
 
 ```sh
@@ -97,11 +104,11 @@ docker build -t 952910/node-server .
 docker push 952910/node-server
 ```
 
-## **Create Deployment and Service for generating report from Kube-bench & serving report metrics from Kube-bench and Trivy**
+## **Create Deployment and Service for serving report metrics from Kube-bench and Trivy**
 
 ```sh
+k delete deployment nodeapp-deployment
 k apply -f node-deploy.yaml
-k apply -f job-cis.yaml
 ```
 
 ## **Open k9s and enable portforwards**
@@ -133,6 +140,15 @@ k port-forward service/trivy-operator -n trivy-system 8080:80
 - Goto Settings and select plugins and add JSON API Plugin from there
 - Now Configure the JSON API datasource for both kube-bench and trivy to fetch data from <node ip>:30000 and <node ip>:30001
 - Import the dashboard configure it with the datasources
+
+## **Script to Auto Update the metrics report**
+
+- It will run the whole process once every 1 hr
+
+```sh
+chmod +x ./updateReport.sh
+./updateReport.sh
+```
 
 ## **Troubleshooting Firewall issues**
 

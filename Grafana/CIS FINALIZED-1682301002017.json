@@ -426,7 +426,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.138:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-bd74fdf8-zdb29\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.186:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-5c88666d6c-njxpz\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -438,7 +438,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.138:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-bd74fdf8-zdb29\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.186:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-5c88666d6c-njxpz\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -1077,8 +1077,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1191,8 +1190,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1309,8 +1307,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1442,8 +1439,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1556,6 +1552,6 @@
   "timezone": "",
   "title": "CIS FINALIZED",
   "uid": "-wYxPsBVk",
-  "version": 6,
+  "version": 7,
   "weekStart": ""
 }
