@@ -1,4 +1,6 @@
-# **microk8s Installation**
+# **VISUALIZING CIS BENCHMARKS AND VULNERABILITIES IN KUBERNETES USING TRIVY & KUBE-BENCH IN GRAFANA**
+
+## **microk8s Installation**
 
 ```sh
 sudo zypper addrepo --refresh \
@@ -16,7 +18,7 @@ su - $USER
 alias k="microk8s kubectl"
 ```
 
-# **microk8s setup**
+## **microk8s setup**
 
 ```sh
 sudo -i
@@ -126,7 +128,7 @@ k edit service trivy-operator -n trivy-system
 k port-forward service/trivy-operator -n trivy-system 8080:80
 ```
 
-## ** Import the Dashboards as needed and configure the datasource**
+## **Import the Dashboards as needed and configure the datasource**
 
 - Goto Settings and select plugins and add JSON API Plugin from there
 - Now Configure the JSON API datasource for both kube-bench and trivy to fetch data from <node ip>:30000 and <node ip>:30001
