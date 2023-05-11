@@ -1,0 +1,165 @@
+Authenticating with existing credentials...
+Login Succeeded
+Using default tag: latest
+The push refers to repository [docker.io/952910/node-server]
+14a35b009aea: Preparing
+25cc33e5aa74: Preparing
+00685982e921: Preparing
+6f8663828df3: Preparing
+0d5f5a015e5d: Preparing
+3c777d951de2: Preparing
+f8a91dd5fc84: Preparing
+cb81227abde5: Preparing
+e01a454893a9: Preparing
+c45660adde37: Preparing
+fe0fb3ab4a0f: Preparing
+f1186e5061f2: Preparing
+b2dba7477754: Preparing
+e01a454893a9: Waiting
+c45660adde37: Waiting
+cb81227abde5: Waiting
+3c777d951de2: Waiting
+fe0fb3ab4a0f: Waiting
+f8a91dd5fc84: Waiting
+b2dba7477754: Waiting
+f1186e5061f2: Waiting
+6f8663828df3: Layer already exists
+0d5f5a015e5d: Layer already exists
+25cc33e5aa74: Layer already exists
+14a35b009aea: Layer already exists
+00685982e921: Layer already exists
+3c777d951de2: Layer already exists
+c45660adde37: Layer already exists
+cb81227abde5: Layer already exists
+e01a454893a9: Layer already exists
+f8a91dd5fc84: Layer already exists
+fe0fb3ab4a0f: Layer already exists
+b2dba7477754: Layer already exists
+f1186e5061f2: Layer already exists
+latest: digest: sha256:b94ec0dd700cead29fd71292c1843a8c026568c9c53cc65f9657f6dc3484c7be size: 3044
+Now create two different JSON API PLUGIN Datasources and
+ add these addresses in the HTTP URL field in Grafana JSON API PLUGIN
+ for fetching the reports from Kube Bench and Trivy 
+ Trivy Status JSON: :30000/
+ Kube Bench JSON: :30001/
+job.batch "kube-bench" deleted
+Authenticating with existing credentials...
+Login Succeeded
+Using default tag: latest
+The push refers to repository [docker.io/952910/node-server]
+14a35b009aea: Preparing
+25cc33e5aa74: Preparing
+00685982e921: Preparing
+6f8663828df3: Preparing
+0d5f5a015e5d: Preparing
+3c777d951de2: Preparing
+f8a91dd5fc84: Preparing
+cb81227abde5: Preparing
+e01a454893a9: Preparing
+c45660adde37: Preparing
+fe0fb3ab4a0f: Preparing
+f1186e5061f2: Preparing
+b2dba7477754: Preparing
+e01a454893a9: Waiting
+f1186e5061f2: Waiting
+c45660adde37: Waiting
+b2dba7477754: Waiting
+f8a91dd5fc84: Waiting
+cb81227abde5: Waiting
+00685982e921: Layer already exists
+6f8663828df3: Layer already exists
+25cc33e5aa74: Layer already exists
+14a35b009aea: Layer already exists
+0d5f5a015e5d: Layer already exists
+cb81227abde5: Layer already exists
+3c777d951de2: Layer already exists
+f8a91dd5fc84: Layer already exists
+c45660adde37: Layer already exists
+e01a454893a9: Layer already exists
+fe0fb3ab4a0f: Layer already exists
+f1186e5061f2: Layer already exists
+b2dba7477754: Layer already exists
+latest: digest: sha256:b94ec0dd700cead29fd71292c1843a8c026568c9c53cc65f9657f6dc3484c7be size: 3044
+service "nodeapp-service" deleted
+service "nodeapp-service2" deleted
+deployment.apps "nodeapp-deployment" deleted
+Now create two different JSON API PLUGIN Datasources and
+ add these addresses in the HTTP URL field in Grafana JSON API PLUGIN
+ for fetching the reports from Kube Bench and Trivy 
+ Trivy Status JSON: 192.168.0.196:30000/
+ Kube Bench JSON: 192.168.0.196:30001/
+job.batch "kube-bench" deleted
+job.batch/kube-bench created
+Authenticating with existing credentials...
+Login Succeeded
+Sending build context to Docker daemon  527.9kB
+Step 1/8 : FROM node:14
+ ---> 1d12470fa662
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> 1025c7ff0ef1
+Step 3/8 : COPY server-combined.js ./
+ ---> Using cache
+ ---> fadc6796fb70
+Step 4/8 : COPY trivy-cis-status.json ./
+ ---> Using cache
+ ---> 5121aa31b2b6
+Step 5/8 : COPY kube-bench.json ./
+ ---> Using cache
+ ---> 7d18cef4dc5e
+Step 6/8 : EXPOSE 7000
+ ---> Using cache
+ ---> acc9514f5526
+Step 7/8 : EXPOSE 7001
+ ---> Using cache
+ ---> bc8322f3be10
+Step 8/8 : CMD ["node", "server-combined.js"]
+ ---> Using cache
+ ---> f8899e2f0838
+Successfully built f8899e2f0838
+Successfully tagged 952910/node-server:latest
+Using default tag: latest
+The push refers to repository [docker.io/952910/node-server]
+14a35b009aea: Preparing
+25cc33e5aa74: Preparing
+00685982e921: Preparing
+6f8663828df3: Preparing
+0d5f5a015e5d: Preparing
+3c777d951de2: Preparing
+f8a91dd5fc84: Preparing
+cb81227abde5: Preparing
+e01a454893a9: Preparing
+c45660adde37: Preparing
+fe0fb3ab4a0f: Preparing
+f1186e5061f2: Preparing
+b2dba7477754: Preparing
+3c777d951de2: Waiting
+e01a454893a9: Waiting
+f8a91dd5fc84: Waiting
+c45660adde37: Waiting
+cb81227abde5: Waiting
+fe0fb3ab4a0f: Waiting
+f1186e5061f2: Waiting
+b2dba7477754: Waiting
+00685982e921: Layer already exists
+6f8663828df3: Layer already exists
+25cc33e5aa74: Layer already exists
+14a35b009aea: Layer already exists
+0d5f5a015e5d: Layer already exists
+c45660adde37: Layer already exists
+e01a454893a9: Layer already exists
+f8a91dd5fc84: Layer already exists
+3c777d951de2: Layer already exists
+cb81227abde5: Layer already exists
+f1186e5061f2: Layer already exists
+fe0fb3ab4a0f: Layer already exists
+b2dba7477754: Layer already exists
+latest: digest: sha256:b94ec0dd700cead29fd71292c1843a8c026568c9c53cc65f9657f6dc3484c7be size: 3044
+deployment.apps/nodeapp-deployment created
+service/nodeapp-service created
+service/nodeapp-service2 created
+Now create two different JSON API PLUGIN Datasources and
+ add these addresses in the HTTP URL field in Grafana JSON API PLUGIN
+ for fetching the reports from Kube Bench and Trivy 
+ Trivy Status JSON: 192.168.0.196:30000/
+ Kube Bench JSON: 192.168.0.196:30001/
