@@ -1371,7 +1371,7 @@
             ],
             "severity": "HIGH",
             "success": false,
-            "target": "default/job-kube-bench",
+            "target": "security/job-kube-bench",
             "title": "Access to host PID"
           },
           {
@@ -1416,7 +1416,7 @@
             ],
             "severity": "HIGH",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
             "title": "Access to host network"
           },
           {
@@ -1428,7 +1428,7 @@
             ],
             "severity": "HIGH",
             "success": false,
-            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Access to host network"
           }
         ],
@@ -1448,7 +1448,43 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "default/job-kube-bench",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Process can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Process can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Process can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "security/job-kube-bench",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1472,7 +1508,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1484,7 +1520,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1496,7 +1532,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1508,7 +1544,19 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
+            "title": "Process can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1532,7 +1580,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1544,7 +1592,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Process can elevate its own privileges"
           },
           {
@@ -1556,7 +1604,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Process can elevate its own privileges"
           }
         ],
@@ -1576,7 +1624,31 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "default/job-kube-bench",
+            "target": "kube-system/replicaset-coredns-6f5f9b5d74",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "security/job-kube-bench",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-79568db7f8",
             "title": "Runs as root user"
           },
           {
@@ -1600,7 +1672,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/replicaset-calico-kube-controllers-79568db7f8",
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
             "title": "Runs as root user"
           },
           {
@@ -1612,7 +1684,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
             "title": "Runs as root user"
           },
           {
@@ -1624,31 +1696,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
-            "title": "Runs as root user"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0012",
-            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
-            "messages": [
-              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
-            ],
-            "severity": "MEDIUM",
-            "success": false,
-            "target": "kube-system/daemonset-calico-node",
-            "title": "Runs as root user"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0012",
-            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
-            "messages": [
-              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
-            ],
-            "severity": "MEDIUM",
-            "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
+            "target": "trivy-system/replicaset-trivy-operator-5cfb97867b",
             "title": "Runs as root user"
           },
           {
@@ -1672,7 +1720,31 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "kube-system/replicaset-coredns-6f5f9b5d74",
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs as root user"
           }
         ],
@@ -1725,7 +1797,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "default/job-kube-bench",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
             "title": "Default capabilities not dropped"
           },
           {
@@ -1737,7 +1809,19 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-6bc69b6f5",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Default capabilities not dropped"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "security/job-kube-bench",
             "title": "Default capabilities not dropped"
           },
           {
@@ -1761,7 +1845,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
             "title": "Default capabilities not dropped"
           },
           {
@@ -1773,31 +1857,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
-            "title": "Default capabilities not dropped"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0003",
-            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
-            "messages": [
-              "The container should drop all default capabilities and add only those that are needed for its execution."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "kube-system/daemonset-calico-node",
-            "title": "Default capabilities not dropped"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0003",
-            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
-            "messages": [
-              "The container should drop all default capabilities and add only those that are needed for its execution."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
             "title": "Default capabilities not dropped"
           },
           {
@@ -1821,7 +1881,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Default capabilities not dropped"
           },
           {
@@ -1833,7 +1893,31 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Default capabilities not dropped"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Default capabilities not dropped"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-5cd9c5d77c",
             "title": "Default capabilities not dropped"
           }
         ],
@@ -1866,19 +1950,7 @@
             ],
             "severity": "MEDIUM",
             "success": false,
-            "target": "default/job-kube-bench",
-            "title": "hostPath volumes mounted"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0023",
-            "description": "HostPath volumes must be forbidden.",
-            "messages": [
-              "HostPath volumes must be forbidden."
-            ],
-            "severity": "MEDIUM",
-            "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "security/job-kube-bench",
             "title": "hostPath volumes mounted"
           },
           {
@@ -1891,6 +1963,18 @@
             "severity": "MEDIUM",
             "success": false,
             "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "hostPath volumes mounted"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0023",
+            "description": "HostPath volumes must be forbidden.",
+            "messages": [
+              "HostPath volumes must be forbidden."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
             "title": "hostPath volumes mounted"
           }
         ],
@@ -2021,7 +2105,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "default/job-kube-bench",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
             "title": "Runs with low group ID"
           },
           {
@@ -2033,7 +2117,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-6bc69b6f5",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
             "title": "Runs with low group ID"
           },
           {
@@ -2045,7 +2129,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
             "title": "Runs with low group ID"
           },
           {
@@ -2057,7 +2141,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "target": "kube-system/replicaset-coredns-6f5f9b5d74",
             "title": "Runs with low group ID"
           },
           {
@@ -2069,7 +2153,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "target": "security/job-kube-bench",
             "title": "Runs with low group ID"
           },
           {
@@ -2081,7 +2165,31 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
             "title": "Runs with low group ID"
           },
           {
@@ -2105,7 +2213,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Runs with low group ID"
           },
           {
@@ -2117,7 +2225,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Runs with low group ID"
           },
           {
@@ -2129,7 +2237,103 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-5cfb97867b",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
             "title": "Runs with low group ID"
           },
           {
@@ -2153,54 +2357,6 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-cfdb49d85",
-            "title": "Runs with low group ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0021",
-            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "monitoring/statefulset-cfdb49d85",
-            "title": "Runs with low group ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0021",
-            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
-            "title": "Runs with low group ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0021",
-            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
-            "title": "Runs with low group ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0021",
-            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
             "target": "trivy-system/replicaset-trivy-operator-5cd9ffb876",
             "title": "Runs with low group ID"
           },
@@ -2213,7 +2369,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low group ID"
           },
           {
@@ -2225,7 +2381,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low group ID"
           },
           {
@@ -2237,7 +2393,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low group ID"
           },
           {
@@ -2246,22 +2402,58 @@
             "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
             "messages": [
               "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-5cd9c5d77c",
+            "title": "Runs with low group ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
             ],
             "severity": "LOW",
             "success": false,
             "target": "kube-system/replicaset-coredns-6f5f9b5d74",
-            "title": "Runs with low group ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/job-kube-bench",
             "title": "Runs with low user ID"
           },
           {
@@ -2273,7 +2465,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-6bc69b6f5",
+            "target": "security/job-kube-bench",
             "title": "Runs with low user ID"
           },
           {
@@ -2285,7 +2477,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "target": "monitoring/statefulset-cfdb49d85",
             "title": "Runs with low user ID"
           },
           {
@@ -2297,7 +2489,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "target": "monitoring/statefulset-cfdb49d85",
             "title": "Runs with low user ID"
           },
           {
@@ -2309,19 +2501,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
+            "target": "monitoring/statefulset-cfdb49d85",
             "title": "Runs with low user ID"
           },
           {
@@ -2345,7 +2525,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Runs with low user ID"
           },
           {
@@ -2357,7 +2537,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
             "title": "Runs with low user ID"
           },
           {
@@ -2369,7 +2549,103 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "monitoring/replicaset-prom-grafana-cbfbdf778",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-5cfb97867b",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
             "title": "Runs with low user ID"
           },
           {
@@ -2393,54 +2669,6 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-cfdb49d85",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "monitoring/statefulset-cfdb49d85",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0020",
-            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
-            "messages": [
-              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
-            ],
-            "severity": "LOW",
-            "success": false,
             "target": "trivy-system/replicaset-trivy-operator-5cd9ffb876",
             "title": "Runs with low user ID"
           },
@@ -2453,7 +2681,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low user ID"
           },
           {
@@ -2465,7 +2693,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low user ID"
           },
           {
@@ -2477,7 +2705,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Runs with low user ID"
           },
           {
@@ -2486,22 +2714,34 @@
             "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
             "messages": [
               "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-5cd9c5d77c",
+            "title": "Runs with low user ID"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "title": "Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
             ],
             "severity": "LOW",
             "success": false,
             "target": "kube-system/replicaset-coredns-6f5f9b5d74",
-            "title": "Runs with low user ID"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0030",
-            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
-            "messages": [
-              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/job-kube-bench",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2513,7 +2753,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-6bc69b6f5",
+            "target": "security/job-kube-bench",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2525,19 +2765,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
-            "title": "Default Seccomp profile not set"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0030",
-            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
-            "messages": [
-              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
+            "target": "monitoring/statefulset-cfdb49d85",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2561,7 +2789,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/daemonset-calico-node",
+            "target": "trivy-system/replicaset-trivy-operator-5c88666d6c",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2573,7 +2801,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/statefulset-cfdb49d85",
+            "target": "kube-system/replicaset-calico-kube-controllers-54b658bf49",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2585,7 +2813,31 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
+            "target": "security/replicaset-nodeapp-deployment-b96c76c84",
+            "title": "Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-5cfb97867b",
+            "title": "Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "The RuntimeDefault/Localhost seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2621,7 +2873,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "monitoring/replicaset-prom-grafana-75cc745f79",
+            "target": "kube-system/daemonset-calico-node",
             "title": "Default Seccomp profile not set"
           },
           {
@@ -2633,7 +2885,7 @@
             ],
             "severity": "LOW",
             "success": false,
-            "target": "kube-system/replicaset-coredns-6f5f9b5d74",
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-5cd9c5d77c",
             "title": "Default Seccomp profile not set"
           }
         ],
@@ -2655,54 +2907,6 @@
             "success": false,
             "target": "default/service-kubernetes",
             "title": "The default namespace should not be used"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0110",
-            "description": "ensure that default namespace should not be used",
-            "messages": [
-              "ensure that default namespace should not be used"
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/job-kube-bench",
-            "title": "The default namespace should not be used"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0110",
-            "description": "ensure that default namespace should not be used",
-            "messages": [
-              "ensure that default namespace should not be used"
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/service-nodeapp-service",
-            "title": "The default namespace should not be used"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0110",
-            "description": "ensure that default namespace should not be used",
-            "messages": [
-              "ensure that default namespace should not be used"
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/replicaset-nodeapp-deployment-b96c76c84",
-            "title": "The default namespace should not be used"
-          },
-          {
-            "category": "Kubernetes Security Check",
-            "checkID": "AVD-KSV-0110",
-            "description": "ensure that default namespace should not be used",
-            "messages": [
-              "ensure that default namespace should not be used"
-            ],
-            "severity": "LOW",
-            "success": false,
-            "target": "default/service-nodeapp-service2",
-            "title": "The default namespace should not be used"
           }
         ],
         "description": "Kubernetes provides a default namespace, where objects are placed if no namespace is specified for them",
@@ -2718,5 +2922,5 @@
     "failCount": 20,
     "passCount": 96
   },
-  "updateTimestamp": "2023-04-24T01:00:00Z"
+  "updateTimestamp": "2023-05-11T20:00:00Z"
 }

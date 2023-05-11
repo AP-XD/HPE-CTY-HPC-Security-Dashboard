@@ -78,7 +78,7 @@ microk8s helm install prom prometheus-community/kube-prometheus-stack -n monitor
 microk8s helm install trivy-operator aqua/trivy-operator \
   --namespace trivy-system \
   --create-namespace \
-  --version 0.13.1 \
+  --version 0.13.2 \
   --values trivy-values.yaml
 ```
 
@@ -143,11 +143,20 @@ k port-forward service/trivy-operator -n trivy-system 8080:80
 
 ## **Script to Auto Update the metrics report**
 
-- It will run the whole process once every 1 hr
+- Finally execute this command in the root directory of this repo to update the reports from kube bench and trivy every hour using cronjob
+- It will run the whole process once every 1 hr and display the logs in cron-log.txt
 
 ```sh
 chmod +x ./updateReport.sh
-./updateReport.sh
+{ crontab -l; echo "0 * * * * $(pwd)/updateReport.sh security >> $(pwd)/cron-log.txt "; } | crontab -
+```
+
+- If you dont want to save logs of cronjob and view it only via mail we can use
+
+```sh
+chmod +x ./updateReport.sh
+{ crontab -l; echo "0 * * * * $(pwd)/updateReport.sh security"; } | crontab -
+mail # Press ENTER to view mail from cronjob
 ```
 
 ## **Troubleshooting Firewall issues**
