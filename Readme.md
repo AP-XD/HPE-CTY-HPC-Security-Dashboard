@@ -147,15 +147,15 @@ k port-forward service/trivy-operator -n trivy-system 8080:80
 - It will run the whole process once every 1 hr and display the logs in cron-log.txt
 
 ```sh
-chmod +x ./updateReport.sh
-{ crontab -l; echo "0 * * * * $(pwd)/updateReport.sh <namespace-name> >> $(pwd)/cron-log.txt "; } | crontab -
+chmod +x ./updateHelm.sh
+{ crontab -l; echo "0 * * * * $(pwd)/updateHelm.sh <namespace-name> >> $(pwd)/cron-log.txt "; } | crontab -
 ```
 
 - If you dont want to save logs of cronjob and view it only via mail we can use
 
 ```sh
-chmod +x ./updateReport.sh
-{ crontab -l; echo "0 * * * * $(pwd)/updateReport.sh <namespace-name>"; } | crontab -
+chmod +x ./updateHelm.sh
+{ crontab -l; echo "0 * * * * $(pwd)/updateHelm.sh <namespace-name>"; } | crontab -
 mail # Press ENTER to view mail from cronjob
 ```
 
