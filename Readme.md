@@ -6,7 +6,7 @@ To know more about the project navigate to [**About.md**](docs/about.md)
 
 ## **Installation**
 
-**For detailed installation instructions, including code snippets and screenshots, please navigate to the [setup.md](docs/setup.md) file in the project repository.**
+### **For detailed installation instructions, including code snippets and screenshots, please navigate to the [setup.md](docs/setup.md) file in the project repository.**
 
 To install and set up the HPC Security Dashboard, follow these steps:
 
