@@ -4,7 +4,7 @@ The HPC Security Dashboard project aims to enhance the logging and visualization
 
 To know more about the project Refer [**About.md**](docs/about.md)
 
-## Installation
+## **Installation**
 
 To install and set up the HPC Security Dashboard, follow these steps:
 
@@ -14,15 +14,15 @@ To install and set up the HPC Security Dashboard, follow these steps:
 
 3. Once MicroK8s is installed, run the script [**update_deploy.sh**](scripts/update_deploy.sh) to install Trivy Operator and Kube Prometheus Stack Helm Chart automatically using the provided configuration files in the project repository.
 
-4. After this run the script [**updateHelm.sh**](scripts/updateHelm.sh) with the **namespace name** to install our solution in the said namespace and deploy the service which will ensure the efficient retrieval and updating of metrics reports from Kube Bench and Trivy. The reports will be made available through the designated output ports.
+4. After this run the script [**metrics_update.sh**](scripts/metrics_update.sh) with the **namespace name** to install our solution in the said namespace and deploy the service which will ensure the efficient retrieval and updating of metrics reports from Kube Bench and Trivy. The reports will be made available through the designated output ports.
 
 5. Set up port forwarding using k9s to enable access to the Prometheus, Grafana, and Trivy Operator pods.
 
 6. Configure the datasources in Grafana.
 
-9. Finally, import the [**HPC Security Dashboard**](Grafana/CIS%20FINALIZED-1682301002017.json) in Grafana.
+9. Finally, import the [**HPC Security Dashboard**](Grafana/CIS%20FINALIZED-1685428397856.json) in Grafana.
 
-For detailed installation instructions, including code snippets and screenshots, please refer to the [install.md](docs/install.md) file in the project repository.
+For detailed installation instructions, including code snippets and screenshots, please refer to the [setup.md](docs/setup.md) file in the project repository.
 
 ## Final Result
 
