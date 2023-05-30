@@ -145,12 +145,9 @@ Configure the datasource for both Kube-Bench and Trivy to fetch data from `<node
 
 ![Cron log](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/19922eb8-d7d0-436f-8b86-f967a09f4c7d)
 
-![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b15a714a-73c3-4162-9e4a-a4b6a0feea2c)
-
 Click save and test. If you get a success message then the plugin is configured properly.
 
-![image](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/bb6d6747-d308-4988-959a-50559a107f1c)
-
+![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b3e2e5a8-4812-4d0d-bbb0-3b52c1e4c218)
 
 ## Import the Dashboard
 
@@ -160,7 +157,7 @@ Click on the **+** symbol on the upper right corner and select Import dashboard 
 
 Now a window will appear like this, prompting you to import a json file. Import [this file](../Grafana/CIS%20FINALIZED-1685428397856.json) and select the datasources appropriately and click import.
 
-![image](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b4e301dd-4686-45b8-84c5-bfd9261b2261)
+![Import json](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b4e301dd-4686-45b8-84c5-bfd9261b2261)
 
 ## Troubleshooting Firewall issues
 
