@@ -26,4 +26,4 @@ To install and set up the HPC Security Dashboard, follow these steps:
 
 ## Final Result
 
-![HPC Security Dashboard](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/c8ccacec-7c30-40f0-a75d-25ede39b9665)
+![HPC Security Dashboard](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/e0b34af2-ad21-4572-8021-c30777506773)
