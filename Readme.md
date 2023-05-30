@@ -6,6 +6,8 @@ To know more about the project navigate to [**About.md**](docs/about.md)
 
 ## **Installation**
 
+**For detailed installation instructions, including code snippets and screenshots, please navigate to the [setup.md](docs/setup.md) file in the project repository.**
+
 To install and set up the HPC Security Dashboard, follow these steps:
 
 1. Start by cloning the project repository to your local machine.
@@ -21,8 +23,6 @@ To install and set up the HPC Security Dashboard, follow these steps:
 6. Configure the datasources in Grafana.
 
 9. Finally, import the [**HPC Security Dashboard**](Grafana/CIS%20FINALIZED-1685428397856.json) in Grafana.
-
-For detailed installation instructions, including code snippets and screenshots, please refer to the [setup.md](docs/setup.md) file in the project repository.
 
 ## Final Result
 
