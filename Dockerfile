@@ -4,12 +4,6 @@ FROM node:14
 # Create app directory
 WORKDIR /app
 
-# # Copy package files to app directory
-# COPY package*.json ./
-
-# # Install app dependencies
-# RUN npm install
-
 # Copy server application and data files to app directory
 COPY server-combined.js ./
 COPY trivy-cis-status.json ./

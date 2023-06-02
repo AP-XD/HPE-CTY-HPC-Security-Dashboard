@@ -17,8 +17,8 @@
       "pluginName": "JSON API"
     },
     {
-      "name": "DS_JSON_API TRIVY",
-      "label": "JSON API trivy",
+      "name": "DS_JSON_API KUBE HUNTER",
+      "label": "JSON API Kube Hunter",
       "description": "",
       "type": "datasource",
       "pluginId": "marcusolsson-json-datasource",
@@ -34,28 +34,16 @@
       "version": ""
     },
     {
-      "type": "panel",
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "9.5.1"
+      "version": "9.5.2"
     },
     {
       "type": "datasource",
       "id": "marcusolsson-json-datasource",
       "name": "JSON API",
-      "version": "1.3.5"
+      "version": "1.3.6"
     },
     {
       "type": "panel",
@@ -117,22 +105,70 @@
         "uid": "${DS_PROMETHEUS}"
       },
       "gridPos": {
-        "h": 3,
+        "h": 2,
         "w": 24,
         "x": 0,
         "y": 0
       },
-      "id": 28,
+      "id": 36,
       "options": {
         "code": {
           "language": "plaintext",
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<p style=\"text-align:center;font-size:350%;font-weight:bold;color:#000;background-color:#146C94\">Kube Bench & Trivy Dashboard</p>",
+        "content": "<p style=\"text-align:center;font-size:250%;font-weight:bold;color:#000;background-color:#5C3A91\">Centralized Security Dashboard</p>",
         "mode": "html"
       },
-      "pluginVersion": "9.5.1",
+      "pluginVersion": "9.5.2",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 16,
+        "x": 0,
+        "y": 2
+      },
+      "id": 42,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align:center;font-size:250%;font-weight:bold;color:#000;background-color:#8A63D6\">CIS Compliance & Vulnerability Report</p>",
+        "mode": "html"
+      },
+      "pluginVersion": "9.5.2",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 8,
+        "x": 16,
+        "y": 2
+      },
+      "id": 40,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align:center;font-size:250%;font-weight:bold;color:#000;background-color:#8A63D6\">Threats</p>",
+        "mode": "html"
+      },
+      "pluginVersion": "9.5.2",
       "type": "text"
     },
     {
@@ -142,24 +178,17 @@
       },
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
-          "thresholds": {
-            "mode": "percentage",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "orange",
-                "value": 10
-              },
-              {
-                "color": "red",
-                "value": 20
-              }
-            ]
-          }
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
         },
         "overrides": [
           {
@@ -183,6 +212,13 @@
               {
                 "id": "displayName",
                 "value": "Total FAIL"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "red",
+                  "mode": "fixed"
+                }
               }
             ]
           },
@@ -195,6 +231,13 @@
               {
                 "id": "displayName",
                 "value": "Total WARN"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "orange",
+                  "mode": "fixed"
+                }
               }
             ]
           },
@@ -213,14 +256,23 @@
         ]
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 9,
+        "w": 5,
         "x": 0,
-        "y": 3
+        "y": 4
       },
-      "id": 4,
+      "id": 38,
       "options": {
-        "orientation": "auto",
+        "displayLabels": [],
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "values": [
+            "value"
+          ]
+        },
+        "pieType": "donut",
         "reduceOptions": {
           "calcs": [
             "lastNotNull"
@@ -228,10 +280,12 @@
           "fields": "",
           "values": false
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
       },
-      "pluginVersion": "9.5.1",
+      "pluginVersion": "9.5.2",
       "targets": [
         {
           "cacheDurationSeconds": 300,
@@ -277,162 +331,153 @@
           }
         }
       ],
-      "type": "gauge"
+      "transparent": true,
+      "type": "piechart"
     },
     {
       "datasource": {
-        "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API KUBE BENCH}"
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
       },
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-GrYlRd"
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
           },
           "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              }
-            ]
-          }
+          "unit": "none"
         },
         "overrides": [
           {
             "matcher": {
               "id": "byName",
-              "options": "total_pass"
+              "options": "{severity=\"Low\"}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "TOTAL PASS"
+                "value": "Low Severity"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "total_fail"
+              "options": "{severity=\"Medium\"}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "TOTAL FAIL"
+                "value": "Medium Severity"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "yellow",
+                  "mode": "fixed"
+                }
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "total_warn"
+              "options": "{severity=\"High\"}"
             },
             "properties": [
               {
+                "id": "color",
+                "value": {
+                  "fixedColor": "orange",
+                  "mode": "fixed"
+                }
+              },
+              {
                 "id": "displayName",
-                "value": "Total WARN"
+                "value": "High Severity"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "total_info"
+              "options": "{severity=\"Critical\"}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "Total INFO"
+                "value": "Critical Severity"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "red",
+                  "mode": "fixed"
+                }
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 3
+        "h": 9,
+        "w": 5,
+        "x": 5,
+        "y": 4
       },
-      "id": 24,
+      "id": 44,
       "options": {
-        "displayMode": "gradient",
-        "minVizHeight": 10,
-        "minVizWidth": 0,
-        "orientation": "horizontal",
+        "displayLabels": [],
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "values": [
+            "value"
+          ]
+        },
+        "pieType": "donut",
         "reduceOptions": {
           "calcs": [
-            "sum"
+            "lastNotNull"
           ],
           "fields": "",
           "values": false
         },
-        "showUnfilled": true,
-        "valueMode": "color"
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
       },
-      "pluginVersion": "9.5.1",
+      "pluginVersion": "9.5.2",
       "targets": [
         {
-          "cacheDurationSeconds": 300,
           "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
           },
-          "fields": [
-            {
-              "jsonPath": "$.Totals"
-            }
-          ],
-          "method": "GET",
-          "queryParams": "",
-          "refId": "A",
-          "urlPath": ""
-        },
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": ""
-            }
-          ],
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "(\n  sum by (severity) (trivy_image_vulnerabilities{severity=\"Low\", namespace=~\"$namespace\"})\n    or\n  sum by (severity) (trivy_image_vulnerabilities{severity=\"Medium\", namespace=~\"$namespace\"})\n    or\n  sum by (severity) (trivy_image_vulnerabilities{severity=\"High\", namespace=~\"$namespace\"})\n    or\n  sum by (severity) (trivy_image_vulnerabilities{severity=\"Critical\", namespace=~\"$namespace\"})\n)\n",
+          "format": "time_series",
           "hide": false,
-          "method": "GET",
-          "queryParams": "",
-          "refId": "B",
-          "urlPath": ""
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
         }
       ],
-      "title": "KUBE BENCH CIS 1.20",
-      "transformations": [
-        {
-          "id": "extractFields",
-          "options": {
-            "replace": true,
-            "source": "Totals"
-          }
-        },
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "A total_pass",
-                "A total_fail",
-                "A total_warn",
-                "A total_info"
-              ]
-            }
-          }
-        }
-      ],
-      "type": "bargauge"
+      "title": "Image Vulnerability",
+      "transparent": true,
+      "type": "piechart"
     },
     {
       "datasource": {
@@ -530,9 +575,9 @@
       },
       "gridPos": {
         "h": 9,
-        "w": 12,
-        "x": 0,
-        "y": 11
+        "w": 6,
+        "x": 10,
+        "y": 4
       },
       "id": 23,
       "options": {
@@ -549,6 +594,9 @@
         "orientation": "auto",
         "showValue": "never",
         "stacking": "normal",
+        "text": {
+          "valueSize": 200
+        },
         "tooltip": {
           "mode": "single",
           "sort": "none"
@@ -618,12 +666,13 @@
           }
         }
       ],
+      "transparent": true,
       "type": "barchart"
     },
     {
       "datasource": {
         "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API KUBE BENCH}"
+        "uid": "${DS_JSON_API KUBE HUNTER}"
       },
       "fieldConfig": {
         "defaults": {
@@ -643,61 +692,13 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "total_pass"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "TOTAL PASS"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "total_fail"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "TOTAL FAIL"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "total_warn"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Total WARN"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "total_info"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Total INFO"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "TOTAL FAIL"
+              "options": "low"
             },
             "properties": [
               {
                 "id": "color",
                 "value": {
-                  "fixedColor": "red",
+                  "fixedColor": "green",
                   "mode": "fixed"
                 }
               }
@@ -706,7 +707,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "Total WARN"
+              "options": "medium"
             },
             "properties": [
               {
@@ -721,167 +722,9 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "Total INFO"
+              "options": "high"
             },
             "properties": [
-              {
-                "id": "color",
-                "value": {
-                  "fixedColor": "yellow",
-                  "mode": "fixed"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "gridPos": {
-        "h": 9,
-        "w": 6,
-        "x": 12,
-        "y": 11
-      },
-      "id": 27,
-      "options": {
-        "displayLabels": [
-          "percent"
-        ],
-        "legend": {
-          "displayMode": "list",
-          "placement": "right",
-          "showLegend": true,
-          "values": []
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "9.4.7",
-      "targets": [
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": "$.Totals"
-            }
-          ],
-          "method": "GET",
-          "queryParams": "",
-          "refId": "A",
-          "urlPath": ""
-        },
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": ""
-            }
-          ],
-          "hide": false,
-          "method": "GET",
-          "queryParams": "",
-          "refId": "B",
-          "urlPath": ""
-        }
-      ],
-      "title": "KUBE BENCH CIS 1.20",
-      "transformations": [
-        {
-          "id": "extractFields",
-          "options": {
-            "replace": true,
-            "source": "Totals"
-          }
-        },
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "A total_pass",
-                "A total_fail",
-                "A total_warn",
-                "A total_info"
-              ]
-            }
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API TRIVY}"
-      },
-      "description": "",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "A passCount"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "PASS COUNT"
-              },
-              {
-                "id": "color",
-                "value": {
-                  "fixedColor": "semi-dark-green",
-                  "mode": "fixed"
-                }
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "A failCount"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "FAIL COUNT"
-              },
-              {
-                "id": "color",
-                "value": {
-                  "mode": "palette-classic"
-                }
-              },
               {
                 "id": "color",
                 "value": {
@@ -895,22 +738,23 @@
       },
       "gridPos": {
         "h": 9,
-        "w": 6,
-        "x": 18,
-        "y": 11
+        "w": 8,
+        "x": 16,
+        "y": 4
       },
-      "id": 20,
+      "id": 41,
       "options": {
-        "displayLabels": [
-          "percent"
-        ],
+        "displayLabels": [],
         "legend": {
-          "displayMode": "list",
+          "displayMode": "table",
           "placement": "right",
           "showLegend": true,
-          "values": []
+          "values": [
+            "value"
+          ],
+          "width": 0
         },
-        "pieType": "pie",
+        "pieType": "donut",
         "reduceOptions": {
           "calcs": [
             "lastNotNull"
@@ -923,283 +767,38 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "9.3.8",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "cacheDurationSeconds": 300,
           "datasource": {
             "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API TRIVY}"
+            "uid": "${DS_JSON_API KUBE HUNTER}"
           },
           "fields": [
             {
-              "jsonPath": "$.summary"
+              "jsonPath": "$.totals"
             }
           ],
           "method": "GET",
           "queryParams": "",
           "refId": "A",
           "urlPath": ""
-        },
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API TRIVY}"
-          },
-          "fields": [
-            {
-              "jsonPath": ""
-            }
-          ],
-          "hide": false,
-          "method": "GET",
-          "queryParams": "",
-          "refId": "B",
-          "urlPath": ""
         }
       ],
-      "title": "Trivy Cluster Compliance Report (CIS 1.23)",
+      "title": "Kube Hunter",
       "transformations": [
         {
           "id": "extractFields",
           "options": {
+            "format": "auto",
             "replace": true,
-            "source": "summary"
+            "source": "totals"
           }
         }
       ],
+      "transparent": true,
       "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API KUBE BENCH}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "continuous-GrYlRd"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 24,
-        "x": 0,
-        "y": 20
-      },
-      "id": 17,
-      "options": {
-        "displayMode": "lcd",
-        "minVizHeight": 10,
-        "minVizWidth": 0,
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [],
-          "fields": "",
-          "values": true
-        },
-        "showUnfilled": true,
-        "valueMode": "color"
-      },
-      "pluginVersion": "9.5.1",
-      "targets": [
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": "$.Controls[*].tests[*]"
-            }
-          ],
-          "method": "GET",
-          "queryParams": "",
-          "refId": "A",
-          "urlPath": ""
-        },
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": ""
-            }
-          ],
-          "hide": false,
-          "method": "GET",
-          "queryParams": "",
-          "refId": "B",
-          "urlPath": ""
-        }
-      ],
-      "title": "KUBE BENCH CIS 1.20",
-      "transformations": [
-        {
-          "id": "extractFields",
-          "options": {
-            "replace": true,
-            "source": "*"
-          }
-        },
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "A section",
-                "A type",
-                "A pass",
-                "A fail",
-                "A warn",
-                "A info",
-                "A desc"
-              ]
-            }
-          }
-        }
-      ],
-      "type": "bargauge"
-    },
-    {
-      "datasource": {
-        "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API KUBE BENCH}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "align": "auto",
-            "cellOptions": {
-              "type": "auto"
-            },
-            "inspect": false
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 11,
-        "w": 24,
-        "x": 0,
-        "y": 32
-      },
-      "id": 18,
-      "options": {
-        "cellHeight": "sm",
-        "footer": {
-          "countRows": false,
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
-        },
-        "showHeader": true
-      },
-      "pluginVersion": "9.5.1",
-      "targets": [
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": "$.Controls[*].tests[*].results[*]"
-            }
-          ],
-          "method": "GET",
-          "queryParams": "",
-          "refId": "A",
-          "urlPath": ""
-        },
-        {
-          "cacheDurationSeconds": 300,
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API KUBE BENCH}"
-          },
-          "fields": [
-            {
-              "jsonPath": ""
-            }
-          ],
-          "hide": false,
-          "method": "GET",
-          "queryParams": "",
-          "refId": "B",
-          "urlPath": ""
-        }
-      ],
-      "title": "KUBE BENCH CIS 1.20 RESULTS",
-      "transformations": [
-        {
-          "id": "extractFields",
-          "options": {
-            "replace": true,
-            "source": "*"
-          }
-        },
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "A test_number",
-                "A test_desc",
-                "A audit",
-                "A AuditConfig",
-                "A type",
-                "A remediation",
-                "A test_info",
-                "A status",
-                "A scored",
-                "A IsMultiple",
-                "A expected_result",
-                "A reason"
-              ]
-            }
-          }
-        }
-      ],
-      "type": "table"
     },
     {
       "datasource": {
@@ -1239,17 +838,101 @@
             "properties": [
               {
                 "id": "custom.width",
-                "value": 98
+                "value": 77
+              },
+              {
+                "id": "displayName",
+                "value": "Sections"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "pass"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 62
+              },
+              {
+                "id": "displayName",
+                "value": "Pass"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "fail"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 63
+              },
+              {
+                "id": "displayName",
+                "value": "Fail"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "warn"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 68
+              },
+              {
+                "id": "displayName",
+                "value": "Warn"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "info"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 57
+              },
+              {
+                "id": "displayName",
+                "value": "Info"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "desc"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 292
+              },
+              {
+                "id": "displayName",
+                "value": "Description"
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 11,
-        "w": 15,
+        "h": 10,
+        "w": 6,
         "x": 0,
-        "y": 43
+        "y": 13
       },
       "id": 9,
       "options": {
@@ -1266,7 +949,7 @@
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "9.5.1",
+      "pluginVersion": "9.5.2",
       "targets": [
         {
           "cacheDurationSeconds": 300,
@@ -1322,26 +1005,22 @@
                 "A fail",
                 "A warn",
                 "A info",
-                "A desc",
-                "A results"
+                "A desc"
               ]
             }
           }
         }
       ],
+      "transparent": true,
       "type": "table"
     },
     {
       "datasource": {
         "type": "marcusolsson-json-datasource",
-        "uid": "${DS_JSON_API TRIVY}"
+        "uid": "${DS_JSON_API KUBE BENCH}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
           "custom": {
             "align": "auto",
             "cellOptions": {
@@ -1364,15 +1043,108 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "test_number"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 166
+              },
+              {
+                "id": "displayName",
+                "value": "Test Number"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "test_desc"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Test Description"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "remediation"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 188
+              },
+              {
+                "id": "displayName",
+                "value": "Remediation"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "remediation"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 1068
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "expected_result"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Expected Result"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "status"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 69
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "expected_result"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 257
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
-        "h": 11,
-        "w": 9,
-        "x": 15,
-        "y": 43
+        "h": 10,
+        "w": 18,
+        "x": 6,
+        "y": 13
       },
-      "id": 22,
+      "id": 18,
       "options": {
         "cellHeight": "sm",
         "footer": {
@@ -1383,20 +1155,20 @@
           ],
           "show": false
         },
-        "frameIndex": 0,
-        "showHeader": true
+        "showHeader": true,
+        "sortBy": []
       },
-      "pluginVersion": "9.5.1",
+      "pluginVersion": "9.5.2",
       "targets": [
         {
           "cacheDurationSeconds": 300,
           "datasource": {
             "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API TRIVY}"
+            "uid": "${DS_JSON_API KUBE BENCH}"
           },
           "fields": [
             {
-              "jsonPath": "$.detailReport.results[*]"
+              "jsonPath": "$.Controls[*].tests[*].results[*]"
             }
           ],
           "method": "GET",
@@ -1408,7 +1180,7 @@
           "cacheDurationSeconds": 300,
           "datasource": {
             "type": "marcusolsson-json-datasource",
-            "uid": "${DS_JSON_API TRIVY}"
+            "uid": "${DS_JSON_API KUBE BENCH}"
           },
           "fields": [
             {
@@ -1422,12 +1194,11 @@
           "urlPath": ""
         }
       ],
-      "title": "Trivy Cluster Compliance Report (CIS 1.23)",
+      "title": "KUBE BENCH CIS 1.20 RESULTS TABLE",
       "transformations": [
         {
           "id": "extractFields",
           "options": {
-            "format": "kvp",
             "replace": true,
             "source": "*"
           }
@@ -1437,38 +1208,248 @@
           "options": {
             "include": {
               "names": [
-                "A checkID",
-                "A severity",
-                "A success",
-                "A description",
-                "A id",
-                "A name",
-                "A target",
-                "A title"
+                "A test_number",
+                "A test_desc",
+                "A audit",
+                "A remediation",
+                "A status",
+                "A expected_result",
+                "A reason"
               ]
             }
           }
         }
       ],
+      "transparent": true,
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "marcusolsson-json-datasource",
+        "uid": "${DS_JSON_API KUBE HUNTER}"
+      },
+      "description": "Click the below link to view the json source",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "remediation"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 201
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "severity"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 73
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "vulnerability_solution"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 701
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "remedy_links"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 352
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 23
+      },
+      "id": 43,
+      "links": [
+        {
+          "targetBlank": true,
+          "title": "json source",
+          "url": "https://api.npoint.io/142c0ad067edfe6365b4"
+        }
+      ],
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "9.5.2",
+      "targets": [
+        {
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "${DS_JSON_API KUBE HUNTER}"
+          },
+          "fields": [
+            {
+              "jsonPath": "$.*"
+            }
+          ],
+          "hide": false,
+          "method": "GET",
+          "queryParams": "",
+          "refId": "B",
+          "urlPath": ""
+        }
+      ],
+      "title": "Master table",
+      "transformations": [
+        {
+          "id": "extractFields",
+          "options": {
+            "replace": true,
+            "source": "*"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "high": true,
+              "low": true,
+              "medium": true
+            },
+            "indexByName": {
+              "issue_description": 3,
+              "references": 6,
+              "remediation": 7,
+              "remedy_links": 5,
+              "severity": 2,
+              "severity_level": 8,
+              "vulnerability_id": 0,
+              "vulnerability_name": 1,
+              "vulnerability_solution": 4
+            },
+            "renameByName": {}
+          }
+        }
+      ],
+      "transparent": true,
       "type": "table"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "revision": 1,
   "schemaVersion": 38,
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "current": {},
+        "datasource": {
+          "type": "prometheus",
+          "uid": "${DS_PROMETHEUS}"
+        },
+        "definition": "label_values(up,cluster)",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Cluster",
+        "multi": true,
+        "name": "cluster",
+        "options": [],
+        "query": {
+          "query": "label_values(up,cluster)",
+          "refId": "PrometheusVariableQueryEditor-VariableQuery"
+        },
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "current": {},
+        "datasource": {
+          "type": "prometheus",
+          "uid": "${DS_PROMETHEUS}"
+        },
+        "definition": "label_values(kube_namespace_labels{cluster=~\"$cluster\"},namespace)",
+        "hide": 0,
+        "includeAll": true,
+        "label": "namespace",
+        "multi": true,
+        "name": "namespace",
+        "options": [],
+        "query": {
+          "query": "label_values(kube_namespace_labels{cluster=~\"$cluster\"},namespace)",
+          "refId": "PrometheusVariableQueryEditor-VariableQuery"
+        },
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "type": "query"
+      }
+    ]
   },
   "time": {
-    "from": "2023-05-24T04:07:23.683Z",
-    "to": "2023-05-24T06:07:23.685Z"
+    "from": "now-1h",
+    "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "CIS FINALIZED",
-  "uid": "-wYxPsBVk",
-  "version": 1,
+  "title": "Centralized dashboard",
+  "uid": "-wYxPsBVl",
+  "version": 4,
   "weekStart": ""
 }

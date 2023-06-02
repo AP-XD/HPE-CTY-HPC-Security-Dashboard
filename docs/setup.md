@@ -20,7 +20,7 @@ sudo zypper dup --from snappy
 sudo zypper install snapd
 sudo systemctl enable --now snapd
 sudo systemctl enable --now snapd.apparmor
-sudo snap install microk8s --classic --channel=1.27
+sudo snap install microk8s --classic --channel=1.26
 sudo usermod -a -G microk8s $USER
 sudo chown -f -R $USER ~/.kube
 su - $USER
