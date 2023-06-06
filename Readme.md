@@ -22,8 +22,9 @@ To install and set up the HPC Security Dashboard, follow these steps:
 
 6. Configure the datasources in Grafana.
 
-9. Finally, import the [**HPC Security Dashboard**](Grafana/CIS%20FINALIZED-1685428397856.json) in Grafana.
+9. Finally, import the [**HPC Security Dashboard**](Grafana/CIS%20FINALIZED-1686071432950.json) in Grafana.
 
 ## Final Result
 
-![HPC Security Dashboard](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/e0b34af2-ad21-4572-8021-c30777506773)
+![HPC Security Dashboard](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/d48f42424216fca9c104676d0265d1cfd4eee6d9/images/final%20result.png)
+

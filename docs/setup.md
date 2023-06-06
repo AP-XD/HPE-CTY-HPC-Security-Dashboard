@@ -84,7 +84,7 @@ compliance:
 
 ```sh
 chmod +x ./scripts/update_deploy.sh
-chmod +x ./metrics_update.sh
+chmod +x ./scripts/metrics_update.sh
 ```
 
 2. Execute the [update_deploy.sh](../scripts/update_deploy.sh) script to install Trivy Operator and Kube Prometheus Stack Helm Chart automatically using the provided configuration files in the project repository.
@@ -109,7 +109,7 @@ mail # Press ENTER to view mail from cronjob
 ```sh
 ./k9s
 ```
-![K9s](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/94428aed-9856-400c-a5a6-48f8d61f4dac)
+![K9s](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/1.png)
 
 
 2. Enable port forwarding for the following pods by pressing Shift+F and Ok on each pod to confirm port forwarding
@@ -119,45 +119,45 @@ mail # Press ENTER to view mail from cronjob
 - `trivy-operator` pod
 
 Sample:
-![K9s](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b43b6f5c-0402-4f42-b751-7dc0824ff930)
+![K9s](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/2.png)
 
 
 ## Configure Datasources in Grafana
 
 1. Access Grafana web UI on http://localhost:3000/ and enter admin credentials
-![Grafana login](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/fd50478c-9937-4f18-8832-10c08203e60f)
+![Grafana login](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/3.png)
 
 2. Plugin activation
 On the top left corner, click on hamburger icon and navigate to Administration > Plugins
 
-![Grafana Plugin](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/df5514eb-91e7-476e-8f6b-1167812cee25)
+![Grafana Plugin](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/4.png)
 
 Now in the search bar, enter json and click 'JSON API' and install it.
 
-![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/50bf0ee1-ae1d-4c2a-9637-84e2cec469a9)
+![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/5.png)
 
 Click 'Create a JSON API Data Source'.
 
-![JSON API DATASOURCE](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/14a20589-7c29-4899-b45e-f8d2a87c0fa3)
+![JSON API DATASOURCE](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/6.png)
 
 Get the URL from the cron-log.txt and now in the HTTP > URL field, enter <node-ip:port>.
 Configure the datasource for both Kube-Bench and Trivy to fetch data from `<node-ip>:30000` and `<node-ip>:30001`.
 
-![Cron log](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/19922eb8-d7d0-436f-8b86-f967a09f4c7d)
+![Cron log](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/7.png)
 
 Click save and test. If you get a success message then the plugin is configured properly.
 
-![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b3e2e5a8-4812-4d0d-bbb0-3b52c1e4c218)
+![JSON API](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/8.png)
 
 ## Import the Dashboard
 
 Click on the **+** symbol on the upper right corner and select Import dashboard from there
 
-![Add button](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/ba61ec87-d2be-4fe8-9bd7-223b03c7dee9)
+![Add button](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/9.png)
 
 Now a window will appear like this, prompting you to import a json file. Import [this file](../Grafana/CIS%20FINALIZED-1685428397856.json) and select the datasources appropriately and click import.
 
-![Import json](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/b4e301dd-4686-45b8-84c5-bfd9261b2261)
+![Import json](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/10.png)
 
 ## Troubleshooting Firewall issues
 
@@ -178,7 +178,7 @@ systemctl stop firewalld
 OR
 
 Stop the firewall using Yast Firewall
-![Yast Firewall](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/assets/63340491/7d30360a-ddcd-40e6-91e2-c8df06a51fbf)
+![Yast Firewall](https://github.com/AP-XD/HPE-CTY-HPC-Security-Dashboard/blob/c757fa1ad6e21f01bf05259f64266c9aadb0f16c/images/11.png)
 
 
 Please note that these instructions assume you are using OpenSUSE and have installed MicroK8s. Some commands and steps may vary depending on your operating system and Kubernetes distribution.
