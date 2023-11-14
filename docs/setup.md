@@ -25,6 +25,7 @@ sudo usermod -a -G microk8s $USER
 sudo chown -f -R $USER ~/.kube
 su - $USER
 alias k="microk8s kubectl"
+microk8s.kubectl config view --raw > $HOME/.kube/config
 ```
 
 2. Start and enable MicroK8s using the following commands:
