@@ -7,10 +7,7 @@ WORKDIR /app
 # Copy server application and data files to app directory
 COPY server-combined.js ./
 COPY trivy-cis-status.json ./
-COPY kube-bench.json ./
-
 # Expose ports
-EXPOSE 7000
 EXPOSE 7001
 
 # Set default command to run server.js
