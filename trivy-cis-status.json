@@ -1,0 +1,2847 @@
+{
+  "detailReport": {
+    "description": "CIS Kubernetes Benchmarks",
+    "id": "cis",
+    "relatedVersion": [
+      "https://www.cisecurity.org/benchmark/kubernetes"
+    ],
+    "results": [
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the API server pod specification file has permissions of 600 or more restrictive",
+        "id": "1.1.1",
+        "name": "Ensure that the API server pod specification file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the API server pod specification file ownership is set to root:root",
+        "id": "1.1.2",
+        "name": "Ensure that the API server pod specification file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the controller manager pod specification file has permissions of 600 or more restrictive",
+        "id": "1.1.3",
+        "name": "Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the controller manager pod specification file ownership is set to root:root",
+        "id": "1.1.4",
+        "name": "Ensure that the controller manager pod specification file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the scheduler pod specification file has permissions of 600 or more restrictive",
+        "id": "1.1.5",
+        "name": "Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the scheduler pod specification file ownership is set to root:root",
+        "id": "1.1.6",
+        "name": "Ensure that the scheduler pod specification file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the etcd pod specification file has permissions of 600 or more restrictive",
+        "id": "1.1.7",
+        "name": "Ensure that the etcd pod specification file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the etcd pod specification file ownership is set to root:root.",
+        "id": "1.1.8",
+        "name": "Ensure that the etcd pod specification file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the Container Network Interface files have permissions of 600 or more restrictive",
+        "id": "1.1.9",
+        "name": "Ensure that the Container Network Interface file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the Container Network Interface files have ownership set to root:root",
+        "id": "1.1.10",
+        "name": "Ensure that the Container Network Interface file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the etcd data directory has permissions of 700 or more restrictive",
+        "id": "1.1.11",
+        "name": "Ensure that the etcd data directory permissions are set to 700 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the etcd data directory ownership is set to etcd:etcd",
+        "id": "1.1.12",
+        "name": "Ensure that the etcd data directory ownership is set to etcd:etcd",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the admin.conf file has permissions of 600",
+        "id": "1.1.13",
+        "name": "Ensure that the admin.conf file permissions are set to 600",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the admin.conf file ownership is set to root:root",
+        "id": "1.1.14",
+        "name": "Ensure that the admin.conf file ownership is set to root:root",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the scheduler.conf file has permissions of 600 or more restrictive",
+        "id": "1.1.15",
+        "name": "Ensure that the scheduler.conf file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the scheduler.conf file ownership is set to root:root",
+        "id": "1.1.16",
+        "name": "Ensure that the scheduler.conf file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the controller-manager.conf file has permissions of 600 or more restrictive",
+        "id": "1.1.17",
+        "name": "Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the controller-manager.conf file ownership is set to root:root.",
+        "id": "1.1.18",
+        "name": "Ensure that the controller-manager.conf file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the Kubernetes PKI directory and file ownership is set to root:root",
+        "id": "1.1.19",
+        "name": "Ensure that the Kubernetes PKI directory and file ownership is set to root:root",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that Kubernetes PKI certificate files have permissions of 600 or more restrictive",
+        "id": "1.1.20",
+        "name": "Ensure that the Kubernetes PKI certificate file permissions are set to 600 or more restrictive",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that Kubernetes PKI key files have permissions of 600",
+        "id": "1.1.21",
+        "name": "Ensure that the Kubernetes PKI key file permissions are set to 600",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Disable anonymous requests to the API server",
+        "id": "1.2.1",
+        "name": "Ensure that the --anonymous-auth argument is set to false",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not use token based authentication",
+        "id": "1.2.2",
+        "name": "Ensure that the --token-auth-file parameter is not set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "This admission controller rejects all net-new usage of the Service field externalIPs",
+        "id": "1.2.3",
+        "name": "Ensure that the --DenyServiceExternalIPs is not set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Use https for kubelet connections",
+        "id": "1.2.4",
+        "name": "Ensure that the --kubelet-https argument is set to true",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Enable certificate based kubelet authentication",
+        "id": "1.2.5",
+        "name": "Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Verify kubelets certificate before establishing connection",
+        "id": "1.2.6",
+        "name": "Ensure that the --kubelet-certificate-authority argument is set as appropriate",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not always authorize all requests",
+        "id": "1.2.7",
+        "name": "Ensure that the --authorization-mode argument is not set to AlwaysAllow",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Restrict kubelet nodes to reading only objects associated with them",
+        "id": "1.2.8",
+        "name": "Ensure that the --authorization-mode argument includes Node",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Turn on Role Based Access Control",
+        "id": "1.2.9",
+        "name": "Ensure that the --authorization-mode argument includes RBAC",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Limit the rate at which the API server accepts requests",
+        "id": "1.2.10",
+        "name": "Ensure that the admission control plugin EventRateLimit is set",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not allow all requests",
+        "id": "1.2.11",
+        "name": "Ensure that the admission control plugin AlwaysAdmit is not set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Always pull images",
+        "id": "1.2.12",
+        "name": "Ensure that the admission control plugin AlwaysPullImages is set",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "The SecurityContextDeny admission controller can be used to deny pods which make use of some SecurityContext fields which could allow for privilege escalation in the cluster. This should be used where PodSecurityPolicy is not in place within the cluster",
+        "id": "1.2.13",
+        "name": "Ensure that the admission control plugin SecurityContextDeny is set if PodSecurityPolicy is not used",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Automate service accounts management",
+        "id": "1.2.14",
+        "name": "Ensure that the admission control plugin ServiceAccount is set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Reject creating objects in a namespace that is undergoing termination",
+        "id": "1.2.15",
+        "name": "Ensure that the admission control plugin NamespaceLifecycle is set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Limit the Node and Pod objects that a kubelet could modify",
+        "id": "1.2.16",
+        "name": "Ensure that the admission control plugin NodeRestriction is set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not disable the secure port",
+        "id": "1.2.17",
+        "name": "Ensure that the --secure-port argument is not set to 0",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Disable profiling, if not needed",
+        "id": "1.2.18",
+        "name": "Ensure that the --profiling argument is set to false",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Enable auditing on the Kubernetes API Server and set the desired audit log path.",
+        "id": "1.2.19",
+        "name": "Ensure that the --audit-log-path argument is set",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Retain the logs for at least 30 days or as appropriate",
+        "id": "1.2.20",
+        "name": "Ensure that the --audit-log-maxage argument is set to 30 or as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Retain 10 or an appropriate number of old log file",
+        "id": "1.2.21",
+        "name": "Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Rotate log files on reaching 100 MB or as appropriate",
+        "id": "1.2.22",
+        "name": "Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Validate service account before validating token",
+        "id": "1.2.24",
+        "name": "Ensure that the --service-account-lookup argument is set to true",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Explicitly set a service account public key file for service accounts on the apiserver",
+        "id": "1.2.25",
+        "name": "Ensure that the --service-account-key-file argument is set as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "etcd should be configured to make use of TLS encryption for client connections",
+        "id": "1.2.26",
+        "name": "Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Setup TLS connection on the API server",
+        "id": "1.2.27",
+        "name": "Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Setup TLS connection on the API server",
+        "id": "1.2.28",
+        "name": "Ensure that the --client-ca-file argument is set appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "etcd should be configured to make use of TLS encryption for client connections.",
+        "id": "1.2.29",
+        "name": "Ensure that the --etcd-cafile argument is set as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Encrypt etcd key-value store",
+        "id": "1.2.30",
+        "name": "Ensure that the --encryption-provider-config argument is set as appropriate",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Activate garbage collector on pod termination, as appropriate",
+        "id": "1.3.1",
+        "name": "Ensure that the --terminated-pod-gc-threshold argument is set as appropriate",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Use individual service account credentials for each controller",
+        "id": "1.3.3",
+        "name": "Ensure that the --use-service-account-credentials argument is set to true",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Explicitly set a service account private key file for service accounts on the controller manager",
+        "id": "1.3.4",
+        "name": "Ensure that the --service-account-private-key-file argument is set as appropriate",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Allow pods to verify the API servers serving certificate before establishing connections",
+        "id": "1.3.5",
+        "name": "Ensure that the --root-ca-file argument is set as appropriate",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Enable kubelet server certificate rotation on controller-manager",
+        "id": "1.3.6",
+        "name": "Ensure that the RotateKubeletServerCertificate argument is set to true",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not bind the scheduler service to non-loopback insecure addresses",
+        "id": "1.3.7",
+        "name": "Ensure that the --bind-address argument is set to 127.0.0.1",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Disable profiling, if not needed",
+        "id": "1.4.1",
+        "name": "Ensure that the --profiling argument is set to false",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not bind the scheduler service to non-loopback insecure addresses",
+        "id": "1.4.2",
+        "name": "Ensure that the --bind-address argument is set to 127.0.0.1",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Configure TLS encryption for the etcd service",
+        "id": "2.1",
+        "name": "Ensure that the --cert-file and --key-file arguments are set as appropriate",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Enable client authentication on etcd service",
+        "id": "2.2",
+        "name": "Ensure that the --client-cert-auth argument is set to true",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not use self-signed certificates for TLS",
+        "id": "2.3",
+        "name": "Ensure that the --auto-tls argument is not set to true",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "etcd should be configured to make use of TLS encryption for peer connections.",
+        "id": "2.4",
+        "name": "Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "etcd should be configured for peer authentication",
+        "id": "2.5",
+        "name": "Ensure that the --peer-client-cert-auth argument is set to true",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not use self-signed certificates for TLS",
+        "id": "2.6",
+        "name": "Ensure that the --peer-auto-tls argument is not set to true",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Kubernetes provides the option to use client certificates for user authentication. However as there is no way to revoke these certificates when a user leaves an organization or loses their credential, they are not suitable for this purpose",
+        "id": "3.1.1",
+        "name": "Client certificate authentication should not be used for users (Manual)",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Kubernetes can audit the details of requests made to the API server. The --audit- policy-file flag must be set for this logging to be enabled.",
+        "id": "3.2.1",
+        "name": "Ensure that a minimal audit policy is created (Manual)",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the audit policy created for the cluster covers key security concerns",
+        "id": "3.2.2",
+        "name": "Ensure that the audit policy covers key security concerns (Manual)",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the kubelet service file has permissions of 600 or more restrictive.",
+        "id": "4.1.1",
+        "name": "Ensure that the kubelet service file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the kubelet service file ownership is set to root:root",
+        "id": "4.1.2",
+        "name": "Ensure that the kubelet service file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "If kube-proxy is running, and if it is using a file-based kubeconfig file, ensure that the proxy kubeconfig file has permissions of 600 or more restrictive",
+        "id": "4.1.3",
+        "name": "If proxy kubeconfig file exists ensure permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "If kube-proxy is running, ensure that the file ownership of its kubeconfig file is set to root:root",
+        "id": "4.1.4",
+        "name": "If proxy kubeconfig file exists ensure ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the kubelet.conf file has permissions of 600 or more restrictive",
+        "id": "4.1.5",
+        "name": "Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the kubelet.conf file ownership is set to root:root",
+        "id": "4.1.6",
+        "name": "Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the certificate authorities file has permissions of 600 or more restrictive",
+        "id": "4.1.7",
+        "name": "Ensure that the certificate authorities file permissions are set to 600 or more restrictive",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that the certificate authorities file ownership is set to root:root",
+        "id": "4.1.8",
+        "name": "Ensure that the client certificate authorities file ownership is set to root:root",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that if the kubelet refers to a configuration file with the --config argument, that file has permissions of 600 or more restrictive",
+        "id": "4.1.9",
+        "name": "If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Ensure that if the kubelet refers to a configuration file with the --config argument, that file is owned by root:root",
+        "id": "4.1.10",
+        "name": "If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Disable anonymous requests to the Kubelet server",
+        "id": "4.2.1",
+        "name": "Ensure that the --anonymous-auth argument is set to false",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0080",
+            "description": "Do not allow all requests. Enable explicit authorization.",
+            "messages": [
+              "Do not allow all requests. Enable explicit authorization."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --authorization-mode argument is not set to AlwaysAllow"
+          }
+        ],
+        "description": "Do not allow all requests. Enable explicit authorization",
+        "id": "4.2.2",
+        "name": "Ensure that the --authorization-mode argument is not set to AlwaysAllow",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0081",
+            "description": "Enable Kubelet authentication using certificates.",
+            "messages": [
+              "Enable Kubelet authentication using certificates."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --client-ca-file argument is set as appropriate"
+          }
+        ],
+        "description": "Enable Kubelet authentication using certificates",
+        "id": "4.2.3",
+        "name": "Ensure that the --client-ca-file argument is set as appropriate",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Disable the read-only port",
+        "id": "4.2.4",
+        "name": "Verify that the --read-only-port argument is set to 0",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not disable timeouts on streaming connections",
+        "id": "4.2.5",
+        "name": "Ensure that the --streaming-connection-idle-timeout argument is not set to 0",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0083",
+            "description": "Protect tuned kernel parameters from overriding kubelet default kernel parameter values.",
+            "messages": [
+              "Protect tuned kernel parameters from overriding kubelet default kernel parameter values."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --protect-kernel-defaults is set to true"
+          }
+        ],
+        "description": "Protect tuned kernel parameters from overriding kubelet default kernel parameter values",
+        "id": "4.2.6",
+        "name": "Ensure that the --protect-kernel-defaults argument is set to true",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Allow Kubelet to manage iptables",
+        "id": "4.2.7",
+        "name": "Ensure that the --make-iptables-util-chains argument is set to true",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not override node hostnames",
+        "id": "4.2.8",
+        "name": "Ensure that the --hostname-override argument is not set",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Security relevant information should be captured. The --event-qps flag on the Kubelet can be used to limit the rate at which events are gathered",
+        "id": "4.2.9",
+        "name": "Ensure that the --event-qps argument is set to 0 or a level which ensures appropriate event capture",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0088",
+            "description": "Setup TLS connection on the Kubelets.",
+            "messages": [
+              "Setup TLS connection on the Kubelets."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --tls-cert-file argument are set as appropriate"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0089",
+            "description": "Setup TLS connection on the Kubelets.",
+            "messages": [
+              "Setup TLS connection on the Kubelets."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --tls-key-file argument are set as appropriate"
+          }
+        ],
+        "description": "Setup TLS connection on the Kubelets",
+        "id": "4.2.10",
+        "name": "Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0090",
+            "description": "Enable kubelet client certificate rotation.",
+            "messages": [
+              "Enable kubelet client certificate rotation."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the --rotate-certificates argument is not set to false"
+          }
+        ],
+        "description": "Enable kubelet client certificate rotation",
+        "id": "4.2.11",
+        "name": "Ensure that the --rotate-certificates argument is not set to false",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0091",
+            "description": "Enable kubelet server certificate rotation.",
+            "messages": [
+              "Enable kubelet server certificate rotation."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Verify that the RotateKubeletServerCertificate argument is set to true"
+          }
+        ],
+        "description": "Enable kubelet server certificate rotation",
+        "id": "4.2.12",
+        "name": "Verify that the RotateKubeletServerCertificate argument is set to true",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KCV-0092",
+            "description": "Ensure that the Kubelet is configured to only use strong cryptographic ciphers.",
+            "messages": [
+              "Ensure that the Kubelet is configured to only use strong cryptographic ciphers."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/node-localhost.localdomain",
+            "title": "Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers"
+          }
+        ],
+        "description": "Ensure that the Kubelet is configured to only use strong cryptographic ciphers",
+        "id": "4.2.13",
+        "name": "Ensure that the Kubelet only makes use of Strong Cryptographic Ciphers",
+        "severity": "CRITICAL"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "The RBAC role cluster-admin provides wide-ranging powers over the environment and should be used only where and when needed",
+        "id": "5.1.1",
+        "name": "Ensure that the cluster-admin role is only used where required",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0041",
+            "description": "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions.",
+            "messages": [
+              "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/clusterrole-trivy-operator",
+            "title": "Manage secrets"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0041",
+            "description": "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions.",
+            "messages": [
+              "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/clusterrole-prom-kube-state-metrics",
+            "title": "Manage secrets"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0041",
+            "description": "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions.",
+            "messages": [
+              "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/clusterrole-prom-grafana-clusterrole",
+            "title": "Manage secrets"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0041",
+            "description": "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions.",
+            "messages": [
+              "Viewing secrets at the cluster-scope is akin to cluster-admin in most clusters as there are typically at least one service accounts (their token stored in a secret) bound to cluster-admin directly or a role/clusterrole that gives similar permissions."
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/clusterrole-prom-kube-prometheus-stack-operator",
+            "title": "Manage secrets"
+          }
+        ],
+        "description": "The Kubernetes API stores secrets, which may be service account tokens for the Kubernetes API or credentials used by workloads in the cluster",
+        "id": "5.1.2",
+        "name": "Minimize access to secrets",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0045",
+            "description": "Check whether role permits wildcard verb on specific resources",
+            "messages": [
+              "Check whether role permits wildcard verb on specific resources"
+            ],
+            "severity": "CRITICAL",
+            "success": false,
+            "target": "/clusterrole-prom-kube-prometheus-stack-operator",
+            "title": "No wildcard verb roles"
+          }
+        ],
+        "description": "Kubernetes Roles and ClusterRoles provide access to resources based on sets of objects and actions that can be taken on those objects. It is possible to set either of these to be the wildcard \"*\" which matches all items",
+        "id": "5.1.3",
+        "name": "Minimize wildcard use in Roles and ClusterRoles",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Service accounts tokens should not be mounted in pods except where the workload running in the pod explicitly needs to communicate with the API server",
+        "id": "5.1.6",
+        "name": "Ensure that Service Account Tokens are only mounted where necessary",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Cluster roles and roles with the impersonate, bind or escalate permissions should not be granted unless strictly required",
+        "id": "5.1.8",
+        "name": "Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0017",
+            "description": "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges.",
+            "messages": [
+              "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Privileged"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0017",
+            "description": "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges.",
+            "messages": [
+              "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Privileged"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0017",
+            "description": "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges.",
+            "messages": [
+              "Privileged containers share namespaces with the host system and do not offer any security. They should be used exclusively for system containers that require high privileges."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Privileged"
+          }
+        ],
+        "description": "Do not generally permit containers to be run with the securityContext.privileged flag set to true",
+        "id": "5.2.2",
+        "name": "Minimize the admission of privileged containers",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0010",
+            "description": "Sharing the host’s PID namespace allows visibility on host processes, potentially leaking information such as environment variables and configuration.",
+            "messages": [
+              "Sharing the host’s PID namespace allows visibility on host processes, potentially leaking information such as environment variables and configuration."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Access to host PID"
+          }
+        ],
+        "description": "Do not generally permit containers to be run with the hostPID flag set to true.",
+        "id": "5.2.3",
+        "name": "Minimize the admission of containers wishing to share the host process ID namespace",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not generally permit containers to be run with the hostIPC flag set to true",
+        "id": "5.2.4",
+        "name": "Minimize the admission of containers wishing to share the host IPC namespace",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0009",
+            "description": "Sharing the host’s network namespace permits processes in the pod to communicate with processes bound to the host’s loopback adapter.",
+            "messages": [
+              "Sharing the host’s network namespace permits processes in the pod to communicate with processes bound to the host’s loopback adapter."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Access to host network"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0009",
+            "description": "Sharing the host’s network namespace permits processes in the pod to communicate with processes bound to the host’s loopback adapter.",
+            "messages": [
+              "Sharing the host’s network namespace permits processes in the pod to communicate with processes bound to the host’s loopback adapter."
+            ],
+            "severity": "HIGH",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Access to host network"
+          }
+        ],
+        "description": "Do not generally permit containers to be run with the hostNetwork flag set to true",
+        "id": "5.2.5",
+        "name": "Minimize the admission of containers wishing to share the host network namespace",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Can elevate its own privileges"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0001",
+            "description": "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.",
+            "messages": [
+              "A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Can elevate its own privileges"
+          }
+        ],
+        "description": "Do not generally permit containers to be run with the allowPrivilegeEscalation flag set to true",
+        "id": "5.2.6",
+        "name": "Minimize the admission of containers with allowPrivilegeEscalation",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Runs as root user"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0012",
+            "description": "Force the running image to run as a non-root user to ensure least privileges.",
+            "messages": [
+              "Force the running image to run as a non-root user to ensure least privileges."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Runs as root user"
+          }
+        ],
+        "description": "Do not generally permit containers to be run as the root user",
+        "id": "5.2.7",
+        "name": "Minimize the admission of root containers",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0022",
+            "description": "According to pod security standard 'Capabilities', capabilities beyond the default set must not be added.",
+            "messages": [
+              "According to pod security standard 'Capabilities', capabilities beyond the default set must not be added."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Specific capabilities added"
+          }
+        ],
+        "description": "Do not generally permit containers with the potentially dangerous NET_RAW capability",
+        "id": "5.2.8",
+        "name": "Minimize the admission of containers with the NET_RAW capability",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not generally permit containers with capabilities assigned beyond the default set",
+        "id": "5.2.9",
+        "name": "Minimize the admission of containers with added capabilities",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Default capabilities: some containers do not drop all"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Default capabilities: some containers do not drop all"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Default capabilities: some containers do not drop all"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Default capabilities: some containers do not drop all"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Default capabilities: some containers do not drop all"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0003",
+            "description": "The container should drop all default capabilities and add only those that are needed for its execution.",
+            "messages": [
+              "The container should drop all default capabilities and add only those that are needed for its execution."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Default capabilities: some containers do not drop all"
+          }
+        ],
+        "description": "Do not generally permit containers with capabilities",
+        "id": "5.2.10",
+        "name": "Minimize the admission of containers with capabilities assigned",
+        "severity": "LOW"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not generally permit containers with capabilities",
+        "id": "5.2.11",
+        "name": "Minimize the admission of containers with capabilities assigned",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0023",
+            "description": "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden.",
+            "messages": [
+              "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "hostPath volumes mounted"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0023",
+            "description": "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden.",
+            "messages": [
+              "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "hostPath volumes mounted"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0023",
+            "description": "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden.",
+            "messages": [
+              "According to pod security standard 'HostPath Volumes', HostPath volumes must be forbidden."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "hostPath volumes mounted"
+          }
+        ],
+        "description": "Do not generally admit containers which make use of hostPath volumes",
+        "id": "5.2.12",
+        "name": "Minimize the admission of HostPath volumes",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Do not generally permit containers which require the use of HostPorts",
+        "id": "5.2.13",
+        "name": "Minimize the admission of containers which use HostPorts",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "There are a variety of CNI plugins available for Kubernetes. If the CNI in use does not support Network Policies it may not be possible to effectively restrict traffic in the cluster",
+        "id": "5.3.1",
+        "name": "Ensure that the CNI in use supports Network Policies (Manual)",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Use network policies to isolate traffic in your cluster network",
+        "id": "5.3.2",
+        "name": "Ensure that all Namespaces have Network Policies defined",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Kubernetes supports mounting secrets as data volumes or as environment variables. Minimize the use of environment variable secrets",
+        "id": "5.4.1",
+        "name": "Prefer using secrets as files over secrets as environment variables (Manual)",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Consider the use of an external secrets storage and management system, instead of using Kubernetes Secrets directly, if you have more complex secret management needs",
+        "id": "5.4.2",
+        "name": "Consider external secret storage (Manual)",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Configure Image Provenance for your deployment",
+        "id": "5.5.1",
+        "name": "Configure Image Provenance using ImagePolicyWebhook admission controller (Manual)",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Use namespaces to isolate your Kubernetes objects",
+        "id": "5.7.1",
+        "name": "Create administrative boundaries between resources using namespaces (Manual)",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-state-metrics-5f569776ff",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-f89f85448",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Seccomp policies disabled"
+          }
+        ],
+        "description": "Enable docker/default seccomp profile in your pod definitions",
+        "id": "5.7.2",
+        "name": "Ensure that the seccomp profile is set to docker/default in your pod definitions",
+        "severity": "MEDIUM"
+      },
+      {
+        "checks": [
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-state-metrics-5f569776ff",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-f89f85448",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0021",
+            "description": "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Runs with GID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-grafana-559bfc9c5f",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-state-metrics-5f569776ff",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-f89f85448",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0020",
+            "description": "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.",
+            "messages": [
+              "Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Runs with UID <= 10000"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-prometheus-prom-kube-prometheus-stack-prometheus",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/statefulset-cfdb49d85",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-state-metrics-5f569776ff",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "monitoring/replicaset-prom-kube-prometheus-stack-operator-f89f85448",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0104",
+            "description": "A program inside the container can bypass Seccomp protection policies.",
+            "messages": [
+              "A program inside the container can bypass Seccomp protection policies."
+            ],
+            "severity": "MEDIUM",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Seccomp policies disabled"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "monitoring/daemonset-prom-prometheus-node-exporter",
+            "title": "Runtime/Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "trivy-system/replicaset-trivy-operator-8dc5d79c7",
+            "title": "Runtime/Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/daemonset-calico-node",
+            "title": "Runtime/Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-coredns-864597b5fd",
+            "title": "Runtime/Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-hostpath-provisioner-7df77bc496",
+            "title": "Runtime/Default Seccomp profile not set"
+          },
+          {
+            "category": "Kubernetes Security Check",
+            "checkID": "AVD-KSV-0030",
+            "description": "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles.",
+            "messages": [
+              "According to pod security standard 'Seccomp', the RuntimeDefault seccomp profile must be required, or allow specific additional profiles."
+            ],
+            "severity": "LOW",
+            "success": false,
+            "target": "kube-system/replicaset-calico-kube-controllers-77bd7c5b",
+            "title": "Runtime/Default Seccomp profile not set"
+          }
+        ],
+        "description": "Apply Security Context to Your Pods and Containers",
+        "id": "5.7.3",
+        "name": "Apply Security Context to Your Pods and Containers",
+        "severity": "HIGH"
+      },
+      {
+        "checks": [
+          {
+            "checkID": "",
+            "severity": "",
+            "success": true
+          }
+        ],
+        "description": "Kubernetes provides a default namespace, where objects are placed if no namespace is specified for them",
+        "id": "5.7.4",
+        "name": "The default namespace should not be used",
+        "severity": "MEDIUM"
+      }
+    ],
+    "title": "CIS Kubernetes Benchmarks v1.23",
+    "version": "1.0"
+  },
+  "summary": {
+    "failCount": 19,
+    "passCount": 97
+  },
+  "updateTimestamp": "2023-11-19T22:00:00Z"
+}

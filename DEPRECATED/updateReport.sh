@@ -1,7 +1,6 @@
 #!/bin/bash
 NAMESPACE="$1" # Setting the namespace from command line argument
 NAMESPACE=$(echo "$NAMESPACE" | tr '[:upper:]' '[:lower:]') # Converting it to lower case 
-# cd /mnt/SSD/Kubernetes/microk8s # Setting the working directory (Should be set to the path where the repo is cloned)
 /snap/bin/microk8s kubectl create ns $NAMESPACE # Creating the namespace
 # /snap/bin/microk8s kubectl -n $NAMESPACE delete job kube-bench
 # /snap/bin/microk8s kubectl -n $NAMESPACE apply -f job-cis.yaml # Creating the job for kube bench cis-1.20

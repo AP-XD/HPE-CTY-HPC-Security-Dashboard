@@ -16,7 +16,7 @@ To install and set up the HPC Security Dashboard, follow these steps:
 
 3. Once MicroK8s is installed, run the script [**update_deploy.sh**](scripts/update_deploy.sh) to install Trivy Operator and Kube Prometheus Stack Helm Chart automatically using the provided configuration files in the project repository.
 
-4. After this run the script [**metrics_update.sh**](scripts/metrics_update.sh) with the **namespace name** to install our solution in the said namespace and deploy the service which will ensure the efficient retrieval and updating of metrics reports from Kube Bench and Trivy. The reports will be made available through the designated output ports.
+4. After this run the script [**metrics_update.sh**](scripts/metrics_update.sh) with the **namespace name** to install our solution in the said namespace and deploy the service which will ensure the efficient retrieval and updating of metrics reports from Trivy. The reports will be made available through the designated output ports.
 
 5. Set up port forwarding using k9s to enable access to the Prometheus, Grafana, and Trivy Operator pods.
 
