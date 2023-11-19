@@ -6,5 +6,5 @@ microk8s helm upgrade --install prom prometheus-community/kube-prometheus-stack 
 microk8s helm upgrade --install trivy-operator aqua/trivy-operator \
   --namespace trivy-system \
   --create-namespace \
-  --version 0.14.1 \
+  --version 0.18.4 \
   --values ../values/trivy-values.yaml

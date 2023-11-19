@@ -1,7 +1,7 @@
 #!/bin/bash
 NAMESPACE="$1" # Setting the namespace from command line argument
 NAMESPACE=$(echo "$NAMESPACE" | tr '[:upper:]' '[:lower:]') # Converting it to lower case 
-cd /mnt/SSD/Kubernetes/microk8s # Setting the working directory (Should be set to the path where the repo is cloned)
+cd /mnt/SSD_D/Kubernetes/microk8s # Setting the working directory (Should be set to the path where the repo is cloned)
 /snap/bin/microk8s helm uninstall kube-automate -n $NAMESPACE
 /snap/bin/microk8s helm install kube-automate ./kube-automate-0.1.0.tgz -n $NAMESPACE --create-namespace         
 sleep 30
