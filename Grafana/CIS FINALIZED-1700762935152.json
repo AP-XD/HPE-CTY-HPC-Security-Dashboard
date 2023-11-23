@@ -157,7 +157,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.154:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.179:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -169,7 +169,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.154:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.179:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -220,7 +220,7 @@
           "useBackend": false
         }
       ],
-      "title": "Trivy Status",
+      "title": "Status - CIS Benchmarks",
       "transformations": [],
       "transparent": true,
       "type": "gauge"
@@ -248,7 +248,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.154:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.179:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Fail\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -267,7 +267,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.154:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
+              "options": "{__name__=\"trivy_cluster_compliance\", container=\"trivy-operator\", description=\"CIS Kubernetes Benchmarks\", endpoint=\"metrics\", instance=\"10.1.102.179:8080\", job=\"trivy-operator\", namespace=\"trivy-system\", pod=\"trivy-operator-7b9c55b76f-qtv9f\", service=\"trivy-operator\", status=\"Pass\", title=\"CIS Kubernetes Benchmarks v1.23\"}"
             },
             "properties": [
               {
@@ -338,7 +338,7 @@
           "useBackend": false
         }
       ],
-      "title": "Trivy Status",
+      "title": "Status - CIS Benchmarks",
       "transformations": [],
       "transparent": true,
       "type": "piechart"
@@ -478,7 +478,7 @@
           "useBackend": false
         }
       ],
-      "title": "Trivy Severity",
+      "title": "Severity - CIS Benchmarks",
       "transformations": [
         {
           "id": "filterFieldsByName",
@@ -570,7 +570,7 @@
           "useBackend": false
         }
       ],
-      "title": "Trivy Severity",
+      "title": "Severity - CIS Benchmarks",
       "transformations": [
         {
           "id": "filterFieldsByName",
@@ -1528,7 +1528,7 @@
           "useBackend": false
         }
       ],
-      "title": "Trivy",
+      "title": "Trivy - CIS Benchmarks",
       "transformations": [
         {
           "id": "filterFieldsByName",
@@ -1835,7 +1835,7 @@
       "type": "table"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "revision": 1,
   "schemaVersion": 38,
   "style": "dark",
@@ -1868,13 +1868,13 @@
     ]
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "CIS FINALIZED",
   "uid": "-wYxPsBVk",
-  "version": 9,
+  "version": 10,
   "weekStart": ""
 }

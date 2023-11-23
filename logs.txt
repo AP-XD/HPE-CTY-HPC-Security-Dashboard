@@ -1,209 +1,211 @@
-2023/11/23 13:47:39 maxprocs: Leaving GOMAXPROCS=16: CPU quota undefined
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"main","msg":"Starting operator","buildInfo":{"Version":"0.17.0-rc","Commit":"386c963daa3a85ed5a4b0e28bcdf707f6d05c623","Date":"2023-11-23T11:14:40Z","Executable":""}}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"operator","msg":"Resolved install mode","install mode":"AllNamespaces","operator namespace":"trivy-system","target namespaces":[],"exclude namespaces":"","target workloads":["pod","replicaset","replicationcontroller","statefulset","daemonset","cronjob","job"]}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"operator","msg":"Watching all namespaces"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"operator","msg":"Enabling built-in configuration audit scanner"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"operator","msg":"Starting controllers manager"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"controller-runtime.metrics","msg":"Starting metrics server"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"starting server","kind":"health probe","addr":"[::]:9090"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"controller-runtime.metrics","msg":"Serving metrics server","bindAddress":":8080","secure":false}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1.Pod"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1.ReplicationController"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"pod","controllerGroup":"","controllerKind":"Pod"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1.ReplicaSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1.StatefulSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1.CronJob"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1.StatefulSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport","source":"kind source: *v1alpha1.RbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1.Pod"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1.ReplicationController"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1.ReplicaSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"pod","controllerGroup":"","controllerKind":"Pod"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1.CronJob"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","logger":"metrics","msg":"Registering resources metrics collector"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"node","controllerGroup":"","controllerKind":"Node","source":"kind source: *v1.Node"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"node","controllerGroup":"","controllerKind":"Node","source":"kind source: *v1alpha1.ClusterInfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"node","controllerGroup":"","controllerKind":"Node"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1.DaemonSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.SbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","source":"kind source: *v1.ClusterRoleBinding"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","source":"kind source: *v1alpha1.ClusterRbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","source":"kind source: *v1.RoleBinding"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","source":"kind source: *v1alpha1.RbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","source":"kind source: *v1.Role"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","source":"kind source: *v1alpha1.RbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport","source":"kind source: *v1alpha1.VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport","source":"kind source: *v1alpha1.ClusterSbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1.DaemonSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","source":"kind source: *v1.LimitRange"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport","source":"kind source: *v1alpha1.ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","source":"kind source: *v1.NetworkPolicy"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","source":"kind source: *v1.ClusterRole"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","source":"kind source: *v1alpha1.ClusterRbacAssessmentReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"service","controllerGroup":"","controllerKind":"Service","source":"kind source: *v1.Service"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"service","controllerGroup":"","controllerKind":"Service","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"service","controllerGroup":"","controllerKind":"Service"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","source":"kind source: *v1.ResourceQuota"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","source":"kind source: *v1alpha1.ConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","source":"kind source: *v1.CustomResourceDefinition"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","source":"kind source: *v1alpha1.ClusterConfigAuditReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting EventSource","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport","source":"kind source: *v1alpha1.ClusterComplianceReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting Controller","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport"}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"node","controllerGroup":"","controllerKind":"Node","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"service","controllerGroup":"","controllerKind":"Service","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"pod","controllerGroup":"","controllerKind":"Pod","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"pod","controllerGroup":"","controllerKind":"Pod","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:39Z","msg":"Starting workers","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","worker count":1}
-{"level":"info","ts":"2023-11-23T13:47:40Z","msg":"Starting workers","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","worker count":1}
+2023/11/23 17:42:04 maxprocs: Leaving GOMAXPROCS=16: CPU quota undefined
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"main","msg":"Starting operator","buildInfo":{"Version":"0.17.0-rc","Commit":"386c963daa3a85ed5a4b0e28bcdf707f6d05c623","Date":"2023-11-23T11:14:40Z","Executable":""}}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"operator","msg":"Resolved install mode","install mode":"AllNamespaces","operator namespace":"trivy-system","target namespaces":[],"exclude namespaces":"","target workloads":["pod","replicaset","replicationcontroller","statefulset","daemonset","cronjob","job"]}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"operator","msg":"Watching all namespaces"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"operator","msg":"Enabling built-in configuration audit scanner"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"operator","msg":"Starting controllers manager"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"controller-runtime.metrics","msg":"Starting metrics server"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"starting server","kind":"health probe","addr":"[::]:9090"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"controller-runtime.metrics","msg":"Serving metrics server","bindAddress":":8080","secure":false}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1.Pod"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"pod","controllerGroup":"","controllerKind":"Pod"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1.ReplicaSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1.ReplicationController"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1.CronJob"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1.DaemonSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport","source":"kind source: *v1alpha1.RbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1.Pod"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1.CronJob"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"pod","controllerGroup":"","controllerKind":"Pod","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"pod","controllerGroup":"","controllerKind":"Pod"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1.StatefulSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1.DaemonSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.SbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1.ReplicaSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1.ReplicationController"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1.StatefulSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","logger":"metrics","msg":"Registering resources metrics collector"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"node","controllerGroup":"","controllerKind":"Node","source":"kind source: *v1.Node"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"node","controllerGroup":"","controllerKind":"Node","source":"kind source: *v1alpha1.ClusterInfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"node","controllerGroup":"","controllerKind":"Node"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"job","controllerGroup":"batch","controllerKind":"Job","source":"kind source: *v1.Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"job","controllerGroup":"batch","controllerKind":"Job"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","source":"kind source: *v1.CustomResourceDefinition"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","source":"kind source: *v1alpha1.ClusterConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport","source":"kind source: *v1alpha1.ClusterSbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","source":"kind source: *v1.NetworkPolicy"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport","source":"kind source: *v1alpha1.ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport","source":"kind source: *v1alpha1.InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport","source":"kind source: *v1alpha1.VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"service","controllerGroup":"","controllerKind":"Service","source":"kind source: *v1.Service"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"service","controllerGroup":"","controllerKind":"Service","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"service","controllerGroup":"","controllerKind":"Service"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","source":"kind source: *v1.ResourceQuota"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","source":"kind source: *v1.RoleBinding"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","source":"kind source: *v1alpha1.RbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","source":"kind source: *v1.Role"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","source":"kind source: *v1.ClusterRoleBinding"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","source":"kind source: *v1alpha1.ClusterRbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","source":"kind source: *v1alpha1.RbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","source":"kind source: *v1.LimitRange"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","source":"kind source: *v1alpha1.ConfigAuditReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","source":"kind source: *v1.ClusterRole"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","source":"kind source: *v1alpha1.ClusterRbacAssessmentReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","source":"kind source: *v1.ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting EventSource","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport","source":"kind source: *v1alpha1.ClusterComplianceReport"}
+{"level":"info","ts":"2023-11-23T17:42:04Z","msg":"Starting Controller","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport"}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"rbacassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"RbacAssessmentReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"pod","controllerGroup":"","controllerKind":"Pod","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"clustersbomreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterSbomReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"exposedsecretreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ExposedSecretReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configauditreport","controllerGroup":"aquasecurity.github.io","controllerKind":"ConfigAuditReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"infraassessmentreport","controllerGroup":"aquasecurity.github.io","controllerKind":"InfraAssessmentReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"resourcequota","controllerGroup":"","controllerKind":"ResourceQuota","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"vulnerabilityreport","controllerGroup":"aquasecurity.github.io","controllerKind":"VulnerabilityReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"networkpolicy","controllerGroup":"networking.k8s.io","controllerKind":"NetworkPolicy","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"service","controllerGroup":"","controllerKind":"Service","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"daemonset","controllerGroup":"apps","controllerKind":"DaemonSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"pod","controllerGroup":"","controllerKind":"Pod","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"statefulset","controllerGroup":"apps","controllerKind":"StatefulSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"clustercompliancereport","controllerGroup":"aquasecurity.github.io","controllerKind":"ClusterComplianceReport","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"clusterrolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRoleBinding","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"clusterrole","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"ClusterRole","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"cronjob","controllerGroup":"batch","controllerKind":"CronJob","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"limitrange","controllerGroup":"","controllerKind":"LimitRange","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"replicationcontroller","controllerGroup":"","controllerKind":"ReplicationController","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"role","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"Role","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"rolebinding","controllerGroup":"rbac.authorization.k8s.io","controllerKind":"RoleBinding","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"node","controllerGroup":"","controllerKind":"Node","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"job","controllerGroup":"batch","controllerKind":"Job","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"replicaset","controllerGroup":"apps","controllerKind":"ReplicaSet","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"customresourcedefinition","controllerGroup":"apiextensions.k8s.io","controllerKind":"CustomResourceDefinition","worker count":1}
+{"level":"info","ts":"2023-11-23T17:42:05Z","msg":"Starting workers","controller":"configmap","controllerGroup":"","controllerKind":"ConfigMap","worker count":1}
+{"level":"info","ts":"2023-11-23T17:44:30Z","logger":"KubeAPIWarningLogger","msg":"unknown field \"report.os\""}
+{"level":"error","ts":"2023-11-23T17:44:39Z","msg":"Reconciler error","controller":"job","controllerGroup":"batch","controllerKind":"Job","Job":{"name":"scan-vulnerabilityreport-f8bcff7cd","namespace":"trivy-system"},"namespace":"trivy-system","name":"scan-vulnerabilityreport-f8bcff7cd","reconcileID":"7416494a-0d0a-4097-85f0-996d082602df","error":"clustersbomreports.aquasecurity.github.io \"54b7b46f75\" already exists","stacktrace":"sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).reconcileHandler\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.16.3/pkg/internal/controller/controller.go:329\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).processNextWorkItem\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.16.3/pkg/internal/controller/controller.go:266\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).Start.func2.2\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.16.3/pkg/internal/controller/controller.go:227"}
