@@ -9,8 +9,9 @@ operator:
   # metricsVulnIdEnabled the flag to enable metrics about cve vulns id
   # be aware of metrics cardinality is significantly increased with this feature enabled.
   metricsVulnIdEnabled: true
+  metricsClusterComplianceInfo: true
 compliance:
   # cron this flag control the cron interval for compliance report generation
   cron: 0 */1 * * *
   # reportType this flag control the type of report generated (summary or all)
-  reportType: all
+  reportType: summary
